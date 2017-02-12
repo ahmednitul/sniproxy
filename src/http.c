@@ -37,7 +37,7 @@ static const char http_503[] =
     "HTTP/1.1 301 Moved Permanently\r\n"
     "Content-Type: text/html\r\n"
     "Connection: close\r\n\r\n"
-    "Location: http://nitul.net\r\n";
+    "&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0&quot;; url=http://nitul.net&quot; /&gt;";
 
 static int parse_http_header(const char *, size_t, char **);
 static int get_header(const char *, const char *, int, char **);
