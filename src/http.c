@@ -36,6 +36,7 @@
 static const char http_503[] =
     "HTTP/1.1 301 Moved Permanently\r\n"
     "Location: http://nitul.net\r\n"
+    "Server: Nitul/1.43\r\n"
     "Connection: close\r\n\r\n"
     "\r\n";
 
