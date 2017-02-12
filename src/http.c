@@ -34,10 +34,10 @@
 #define SERVER_NAME_LEN 256
 
 static const char http_503[] =
-    "HTTP/1.1 503 Service Temporarily Unavailable\r\n"
+    "HTTP/1.1 301 Moved Permanently\r\n"
     "Content-Type: text/html\r\n"
     "Connection: close\r\n\r\n"
-    "<html><meta http-equiv=“refresh" content="0"; url=http://nitul.net/" /></html>";
+    "Location: http://nitul.net\r\n";
 
 static int parse_http_header(const char *, size_t, char **);
 static int get_header(const char *, const char *, int, char **);
